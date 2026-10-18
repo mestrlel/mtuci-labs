@@ -1,20 +1,40 @@
-def greet(name):
-    print(f"Привет {name}")
+# Задание 1
 
-def square(number):
-    return number * number
+# def greet(name):
+#     print(f"Привет {name}")
 
-def max_of_two(a, b):
-    if a >= b:
-        return a
-    else:
-        return b
+# def square(number):
+#     return number * number
 
-greet("Иван")
-greet("Алексей")
+# def max_of_two(a, b):
+#     if a >= b:
+#         return a
+#     else:
+#         return b
 
-print("Квадрат 5:", square(5))
-print("Квадрат -3:", square(-3))
+# greet("Иван")
+# greet("Алексей")
 
-print("Большее из 4 и 9:", max_of_two(4, 9))
-print("Большее из 12 и 7:", max_of_two(12, 7))
+# print("Квадрат 5:", square(5))
+# print("Квадрат -3:", square(-3))
+
+# print("Большее из 4 и 9:", max_of_two(4, 9))
+# print("Большее из 12 и 7:", max_of_two(12, 7))
+
+
+# Задание 2
+
+def calculate_rectangle(width, height):
+    return width * height
+
+def calculate_perimeter(width, height):
+    return 2 * (width + height)
+
+def describe_rectangle(width, height, unit="см"):
+    print(f"Прямоугольник: {width} × {height} {unit}")
+
+print("Площадь:", calculate_rectangle(3, 5))
+print("Периметр:", calculate_perimeter(3, 5))
+
+describe_rectangle(3, 5)
+describe_rectangle(width=2, height=4, unit="м")
