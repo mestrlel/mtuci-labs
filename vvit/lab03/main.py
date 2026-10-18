@@ -149,7 +149,8 @@ def find_element(numbers, target):
     return -1
 
 
-numbers = [4, 7, 2, 7, 9]
-print('Список:', numbers)
-print('Индекс первого 7:', find_element(numbers, 7))
-print('Поиск 100:', find_element(numbers, 100))
+# Демонстрационный запуск отключён после проверки.
+# numbers = [4, 7, 2, 7, 9]
+# print('Список:', numbers)
+# print('Индекс первого 7:', find_element(numbers, 7))
+# print('Поиск 100:', find_element(numbers, 100))
