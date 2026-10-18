@@ -162,5 +162,6 @@ def analyze(numbers):
     return (find_min(numbers), find_max(numbers), calculate_sum(numbers) / len(numbers))
 
 
-minimum, maximum, average = analyze([8, 3, 12, -4, 7])
-print('Минимум:', minimum, 'Максимум:', maximum, 'Среднее:', average)
+# Демонстрационный запуск отключён после проверки.
+# minimum, maximum, average = analyze([8, 3, 12, -4, 7])
+# print('Минимум:', minimum, 'Максимум:', maximum, 'Среднее:', average)
