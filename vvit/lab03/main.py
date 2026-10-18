@@ -154,3 +154,13 @@ def find_element(numbers, target):
 # print('Список:', numbers)
 # print('Индекс первого 7:', find_element(numbers, 7))
 # print('Поиск 100:', find_element(numbers, 100))
+
+
+# Задание 10. Возврат нескольких значений
+
+def analyze(numbers):
+    return (find_min(numbers), find_max(numbers), calculate_sum(numbers) / len(numbers))
+
+
+minimum, maximum, average = analyze([8, 3, 12, -4, 7])
+print('Минимум:', minimum, 'Максимум:', maximum, 'Среднее:', average)
