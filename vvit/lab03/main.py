@@ -66,6 +66,7 @@
 
 # Задание 5. Срезы
 
-numbers = list(range(1, 11))
-for label, result in [('Первые три', numbers[:3]), ('Последние три', numbers[-3:]), ('С 3-го по 7-й', numbers[2:7]), ('Каждый второй', numbers[::2]), ('В обратном порядке', numbers[::-1])]:
-    print(label + ':', result)
+# Демонстрационный запуск отключён после проверки.
+# numbers = list(range(1, 11))
+# for label, result in [('Первые три', numbers[:3]), ('Последние три', numbers[-3:]), ('С 3-го по 7-й', numbers[2:7]), ('Каждый второй', numbers[::2]), ('В обратном порядке', numbers[::-1])]:
+#     print(label + ':', result)
