@@ -24,17 +24,18 @@
 
 # Задание 2
 
-def calculate_rectangle(width, height):
-    return width * height
+# def calculate_rectangle(width, height):
+#     return width * height
 
-def calculate_perimeter(width, height):
-    return 2 * (width + height)
+# def calculate_perimeter(width, height):
+#     return 2 * (width + height)
 
-def describe_rectangle(width, height, unit="см"):
-    print(f"Прямоугольник: {width} × {height} {unit}")
+# def describe_rectangle(width, height, unit="см"):
+#     print(f"Прямоугольник: {width} × {height} {unit}")
 
-print("Площадь:", calculate_rectangle(3, 5))
-print("Периметр:", calculate_perimeter(3, 5))
+# print("Площадь:", calculate_rectangle(3, 5))
+# print("Периметр:", calculate_perimeter(3, 5))
 
-describe_rectangle(3, 5)
-describe_rectangle(width=2, height=4, unit="м")
+# describe_rectangle(3, 5)
+# describe_rectangle(width=2, height=4, unit="м")
+
