@@ -165,3 +165,11 @@ def analyze(numbers):
 # Демонстрационный запуск отключён после проверки.
 # minimum, maximum, average = analyze([8, 3, 12, -4, 7])
 # print('Минимум:', minimum, 'Максимум:', maximum, 'Среднее:', average)
+
+
+# Задание 11. Lambda-функции
+
+numbers = [-10, 3, -2, 8, -5]
+print('Обычная сортировка:', sorted(numbers))
+print('По модулю:', sorted(numbers, key=lambda x: abs(x)))
+print('lambda вычисляет ключ сравнения; сами числа сохраняют свой знак.')
