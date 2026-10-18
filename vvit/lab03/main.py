@@ -70,3 +70,21 @@
 # numbers = list(range(1, 11))
 # for label, result in [('Первые три', numbers[:3]), ('Последние три', numbers[-3:]), ('С 3-го по 7-й', numbers[2:7]), ('Каждый второй', numbers[::2]), ('В обратном порядке', numbers[::-1])]:
 #     print(label + ':', result)
+
+
+# Задание 6. Работа с кортежами
+
+measurements = (12, 15, 11, 18, 14, 20, 16, 13)
+print('Первый:', measurements[0], 'Последний:', measurements[-1])
+print('Срез:', measurements[2:5])
+try:
+    measurements[0] = 99
+except TypeError as error:
+    print(type(error).__name__ + ':', error)
+print('Кортеж нельзя изменять поэлементно.')
+first, second = measurements[:2]
+print('Распаковка:', first, second)
+mutable = list(measurements)
+mutable[0] = 99
+measurements = tuple(mutable)
+print('Новый кортеж:', measurements)
