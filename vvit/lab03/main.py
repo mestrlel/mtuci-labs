@@ -74,17 +74,18 @@
 
 # Задание 6. Работа с кортежами
 
-measurements = (12, 15, 11, 18, 14, 20, 16, 13)
-print('Первый:', measurements[0], 'Последний:', measurements[-1])
-print('Срез:', measurements[2:5])
-try:
-    measurements[0] = 99
-except TypeError as error:
-    print(type(error).__name__ + ':', error)
-print('Кортеж нельзя изменять поэлементно.')
-first, second = measurements[:2]
-print('Распаковка:', first, second)
-mutable = list(measurements)
-mutable[0] = 99
-measurements = tuple(mutable)
-print('Новый кортеж:', measurements)
+# Демонстрационный запуск отключён после проверки.
+# measurements = (12, 15, 11, 18, 14, 20, 16, 13)
+# print('Первый:', measurements[0], 'Последний:', measurements[-1])
+# print('Срез:', measurements[2:5])
+# try:
+#     measurements[0] = 99
+# except TypeError as error:
+#     print(type(error).__name__ + ':', error)
+# print('Кортеж нельзя изменять поэлементно.')
+# first, second = measurements[:2]
+# print('Распаковка:', first, second)
+# mutable = list(measurements)
+# mutable[0] = 99
+# measurements = tuple(mutable)
+# print('Новый кортеж:', measurements)
