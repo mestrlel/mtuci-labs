@@ -102,3 +102,38 @@
 # print('Исходный список после sorted:', numbers)
 # result = numbers.sort()
 # print('Список после sort:', numbers, 'Возвращённое значение:', result)
+
+
+# Задание 8. Собственные алгоритмы
+
+def calculate_sum(numbers):
+    total = 0
+    for number in numbers:
+        total += number
+    return total
+
+
+def find_min(numbers):
+    if not numbers:
+        raise ValueError('Список не должен быть пустым')
+    result = numbers[0]
+    for number in numbers:
+        if number < result:
+            result = number
+    return result
+
+
+def find_max(numbers):
+    if not numbers:
+        raise ValueError('Список не должен быть пустым')
+    result = numbers[0]
+    for number in numbers:
+        if number > result:
+            result = number
+    return result
+
+
+numbers = [8, 3, 12, -4, 7, 0, 15, 2, 9, 6]
+print('Своя сумма / sum:', calculate_sum(numbers), sum(numbers))
+print('Свой минимум / min:', find_min(numbers), min(numbers))
+print('Свой максимум / max:', find_max(numbers), max(numbers))
