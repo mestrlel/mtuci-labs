@@ -138,3 +138,18 @@ def find_max(numbers):
 # print('Своя сумма / sum:', calculate_sum(numbers), sum(numbers))
 # print('Свой минимум / min:', find_min(numbers), min(numbers))
 # print('Свой максимум / max:', find_max(numbers), max(numbers))
+
+
+# Задание 9. Линейный поиск
+
+def find_element(numbers, target):
+    for index, number in enumerate(numbers):
+        if number == target:
+            return index
+    return -1
+
+
+numbers = [4, 7, 2, 7, 9]
+print('Список:', numbers)
+print('Индекс первого 7:', find_element(numbers, 7))
+print('Поиск 100:', find_element(numbers, 100))
