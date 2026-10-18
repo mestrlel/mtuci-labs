@@ -133,7 +133,8 @@ def find_max(numbers):
     return result
 
 
-numbers = [8, 3, 12, -4, 7, 0, 15, 2, 9, 6]
-print('Своя сумма / sum:', calculate_sum(numbers), sum(numbers))
-print('Свой минимум / min:', find_min(numbers), min(numbers))
-print('Свой максимум / max:', find_max(numbers), max(numbers))
+# Демонстрационный запуск отключён после проверки.
+# numbers = [8, 3, 12, -4, 7, 0, 15, 2, 9, 6]
+# print('Своя сумма / sum:', calculate_sum(numbers), sum(numbers))
+# print('Свой минимум / min:', find_min(numbers), min(numbers))
+# print('Свой максимум / max:', find_max(numbers), max(numbers))
