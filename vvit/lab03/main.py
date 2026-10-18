@@ -39,14 +39,17 @@
 # describe_rectangle(3, 5)
 # describe_rectangle(width=2, height=4, unit="м")
 
+
 # Задание 3
 
-value = 10
-def example():
-    value = 20
-    message = 'Внутри функции:'
-    print(message, value)
-example()
-print("Снаружи функции:", value)
- # print(message) ошибка возникает потому что  переменная определенна только внутри функции
- 
+# value = 10
+# def example():
+#     value = 20
+#     message = 'Внутри функции:'
+#     print(message, value)
+# example()
+# print("Снаружи функции:", value)
+#  # print(message) ошибка возникает потому что  переменная определенна только внутри функции
+
+
+# Задание 4
