@@ -174,3 +174,55 @@ def analyze(numbers):
 # print('Обычная сортировка:', sorted(numbers))
 # print('По модулю:', sorted(numbers, key=lambda x: abs(x)))
 # print('lambda вычисляет ключ сравнения; сами числа сохраняют свой знак.')
+
+
+# Задание 12. Анализ результатов измерений
+
+def calculate_average(measurements):
+    if not measurements:
+        raise ValueError('Список не должен быть пустым')
+    total = 0
+    for value in measurements:
+        total += value
+    return total / len(measurements)
+
+
+def find_minimum(measurements):
+    return find_min(measurements)
+
+
+def find_maximum(measurements):
+    return find_max(measurements)
+
+
+def count_above_average(measurements):
+    average = calculate_average(measurements)
+    count = 0
+    for value in measurements:
+        if value > average:
+            count += 1
+    return count
+
+
+def find_value(measurements, target):
+    return find_element(measurements, target)
+
+
+def analyze_measurements(measurements):
+    return (find_minimum(measurements), find_maximum(measurements), calculate_average(measurements))
+
+
+measurements = [12, 15, 11, 18, 14, 20, 16, 13, 17, 14]
+minimum, maximum, average = analyze_measurements(measurements)
+print('Измерения:', measurements)
+print('Количество:', len(measurements))
+print('Минимум:', minimum)
+print('Максимум:', maximum)
+print('Среднее:', round(average, 2))
+print('Выше среднего:', count_above_average(measurements))
+target = float(input('Какое значение найти? '))
+index = find_value(measurements, target)
+if index == -1:
+    print('Значение не найдено')
+else:
+    print(f'Первое вхождение: индекс {index}, позиция {index + 1}')
