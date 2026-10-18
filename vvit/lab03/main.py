@@ -54,7 +54,6 @@
 
 # Задание 4. Работа со списками
 
-# Демонстрационный запуск отключён после проверки.
 # numbers = [8, 3, 12, -4, 7, 0, 15, 2, 9, 6]
 # print('Исходный список:', numbers)
 # print('Первый, третий, последний:', numbers[0], numbers[2], numbers[-1])
@@ -66,7 +65,6 @@
 
 # Задание 5. Срезы
 
-# Демонстрационный запуск отключён после проверки.
 # numbers = list(range(1, 11))
 # for label, result in [('Первые три', numbers[:3]), ('Последние три', numbers[-3:]), ('С 3-го по 7-й', numbers[2:7]), ('Каждый второй', numbers[::2]), ('В обратном порядке', numbers[::-1])]:
 #     print(label + ':', result)
@@ -74,15 +72,10 @@
 
 # Задание 6. Работа с кортежами
 
-# Демонстрационный запуск отключён после проверки.
 # measurements = (12, 15, 11, 18, 14, 20, 16, 13)
 # print('Первый:', measurements[0], 'Последний:', measurements[-1])
 # print('Срез:', measurements[2:5])
-# try:
-#     measurements[0] = 99
-# except TypeError as error:
-#     print(type(error).__name__ + ':', error)
-# print('Кортеж нельзя изменять поэлементно.')
+# measurements[0] = 99
 # first, second = measurements[:2]
 # print('Распаковка:', first, second)
 # mutable = list(measurements)
@@ -93,7 +86,6 @@
 
 # Задание 7. Встроенные функции
 
-# Демонстрационный запуск отключён после проверки.
 # numbers = [8, 3, 12, -4, 7, 0, 15, 2, 9, 6]
 # print('Количество:', len(numbers), 'Сумма:', sum(numbers))
 # print('Минимум:', min(numbers), 'Максимум:', max(numbers))
@@ -133,7 +125,6 @@ def find_max(numbers):
     return result
 
 
-# Демонстрационный запуск отключён после проверки.
 # numbers = [8, 3, 12, -4, 7, 0, 15, 2, 9, 6]
 # print('Своя сумма / sum:', calculate_sum(numbers), sum(numbers))
 # print('Свой минимум / min:', find_min(numbers), min(numbers))
@@ -149,7 +140,6 @@ def find_element(numbers, target):
     return -1
 
 
-# Демонстрационный запуск отключён после проверки.
 # numbers = [4, 7, 2, 7, 9]
 # print('Список:', numbers)
 # print('Индекс первого 7:', find_element(numbers, 7))
@@ -162,18 +152,15 @@ def analyze(numbers):
     return (find_min(numbers), find_max(numbers), calculate_sum(numbers) / len(numbers))
 
 
-# Демонстрационный запуск отключён после проверки.
 # minimum, maximum, average = analyze([8, 3, 12, -4, 7])
 # print('Минимум:', minimum, 'Максимум:', maximum, 'Среднее:', average)
 
 
 # Задание 11. Lambda-функции
 
-# Демонстрационный запуск отключён после проверки.
 # numbers = [-10, 3, -2, 8, -5]
 # print('Обычная сортировка:', sorted(numbers))
 # print('По модулю:', sorted(numbers, key=lambda x: abs(x)))
-# print('lambda вычисляет ключ сравнения; сами числа сохраняют свой знак.')
 
 
 # Задание 12. Анализ результатов измерений
@@ -212,7 +199,6 @@ def analyze_measurements(measurements):
     return (find_minimum(measurements), find_maximum(measurements), calculate_average(measurements))
 
 
-# Демонстрационный запуск отключён после проверки.
 # measurements = [12, 15, 11, 18, 14, 20, 16, 13, 17, 14]
 # minimum, maximum, average = analyze_measurements(measurements)
 # print('Измерения:', measurements)
