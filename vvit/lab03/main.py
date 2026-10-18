@@ -89,3 +89,15 @@
 # mutable[0] = 99
 # measurements = tuple(mutable)
 # print('Новый кортеж:', measurements)
+
+
+# Задание 7. Встроенные функции
+
+numbers = [8, 3, 12, -4, 7, 0, 15, 2, 9, 6]
+print('Количество:', len(numbers), 'Сумма:', sum(numbers))
+print('Минимум:', min(numbers), 'Максимум:', max(numbers))
+print('Среднее:', sum(numbers) / len(numbers))
+print('sorted:', sorted(numbers))
+print('Исходный список после sorted:', numbers)
+result = numbers.sort()
+print('Список после sort:', numbers, 'Возвращённое значение:', result)
