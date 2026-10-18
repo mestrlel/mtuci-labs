@@ -169,7 +169,8 @@ def analyze(numbers):
 
 # Задание 11. Lambda-функции
 
-numbers = [-10, 3, -2, 8, -5]
-print('Обычная сортировка:', sorted(numbers))
-print('По модулю:', sorted(numbers, key=lambda x: abs(x)))
-print('lambda вычисляет ключ сравнения; сами числа сохраняют свой знак.')
+# Демонстрационный запуск отключён после проверки.
+# numbers = [-10, 3, -2, 8, -5]
+# print('Обычная сортировка:', sorted(numbers))
+# print('По модулю:', sorted(numbers, key=lambda x: abs(x)))
+# print('lambda вычисляет ключ сравнения; сами числа сохраняют свой знак.')
